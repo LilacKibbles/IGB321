@@ -667,8 +667,17 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
       <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
@@ -700,6 +709,9 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
@@ -708,18 +720,6 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder">
-      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.Editor">
-      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ProBuilder.AddOns.Editor">
-      <HintPath>C:/Users/foxho/OneDrive/Desktop/IGB321/IGB321/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
