@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679827803039900542}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -65.3, y: -0, z: -43.9}
-  m_LocalScale: {x: -1.0000029, y: 1, z: 0.61523527}
+  m_LocalPosition: {x: -65.3, y: 0.1, z: -43.9}
+  m_LocalScale: {x: -1.0000029, y: 1.1913238, z: 0.61523557}
   m_Children: []
   m_Father: {fileID: 4369994722329116385}
   m_RootOrder: 8
@@ -2293,9 +2293,17 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 00000000
+  m_SelectedEdges:
+  - a: 0
+    b: 0
+  - a: 0
+    b: 0
+  - a: 0
+    b: 0
+  - a: 0
+    b: 0
+  m_SelectedVertices: 00000000000000000000000000000000
 --- !u!64 &26330038592147842
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2605,8 +2613,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4369994721143238501}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0.43, y: -0, z: -15.65}
-  m_LocalScale: {x: 0.9795604, y: 1, z: 0.50958526}
+  m_LocalPosition: {x: -0.86, y: 0.06, z: -15.65}
+  m_LocalScale: {x: 0.9795613, y: 1.1120768, z: 0.48475784}
   m_Children: []
   m_Father: {fileID: 4369994722329116385}
   m_RootOrder: 1
@@ -3760,8 +3768,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4369994721835604375}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: -25.08, y: -0, z: 15.3}
-  m_LocalScale: {x: -1.0000029, y: 1, z: 0.99951607}
+  m_LocalPosition: {x: -26.38, y: 0.08, z: 15.3}
+  m_LocalScale: {x: -1.0000038, y: 1.1534196, z: 0.9744218}
   m_Children: []
   m_Father: {fileID: 4369994722329116385}
   m_RootOrder: 2
@@ -5379,6 +5387,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Closed Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 289700971112848220, guid: a5663e56daff7e34aa0c15efd7edc602,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 292109514049814644, guid: a5663e56daff7e34aa0c15efd7edc602,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5453,6 +5466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Closed Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 289700971112848220, guid: a5663e56daff7e34aa0c15efd7edc602,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 292109514049814644, guid: a5663e56daff7e34aa0c15efd7edc602,
         type: 3}
