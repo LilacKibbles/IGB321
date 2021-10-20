@@ -29,12 +29,15 @@ public class Enemy : MonoBehaviour {
     private float damageTimer;
     private float damageTime = 0.5f;
 
+    private float takeDamageTimer;
+
     public GameObject burning;
     public GameObject explosion;
 
     // Use this for initialization
     void Start () {
         agent = GetComponent<NavMeshAgent>();
+        takeDamageTimer = 0;
     }
 
     // Update is called once per frame
@@ -94,6 +97,7 @@ public class Enemy : MonoBehaviour {
         if (collision.transform.tag == "Player" && Time.time > damageTimer) {
             collision.transform.GetComponent<PlayerAvatar>().takeDamage(damage);
             damageTimer = Time.time + damageTime;
+            //Debug.Log("shit");
         }
     }
 

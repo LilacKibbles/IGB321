@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - Ground
+  - Goal
+  - Environment
+  - GameManager
+  - Enemy
+  - Sword
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,12 @@ using UnityEngine;
 public class PlayerAvatar : MonoBehaviour {
 
     public GameObject avatar;
-    private Animator anim;
+    public GameObject sword;
+    public GameObject swordCol;
+    public GameObject swordColLocal;
+
+    private Vector3 swordPos;
+    private Quaternion swordRot;
 
     public float health = 100.0f;
     private bool dead = false;
@@ -17,7 +22,7 @@ public class PlayerAvatar : MonoBehaviour {
 
     //Weapons
     public GameObject bullet;
-    private float MGFireTime = 0.075f;
+    private float MGFireTime = 0.3f;
     private float MGFireTimer;
     public int ammo = 500;
 
@@ -26,69 +31,92 @@ public class PlayerAvatar : MonoBehaviour {
     private float FTFireTimer;
     public int fuel = 50;
 
-    //Weapon Effects
-    public GameObject muzzleFlash;
-    public GameObject flameStream;
+    public float diagDodgeSpeed = 20f;
+    public float fullDodgeSpeed = 27f;
+    public float dodgeTime = 0.25f;
+    private float dodgeUntil;
+    public bool dodgeActive = false;
+    private string dodgeDir1 = "";
+    private string dodgeDir2 = "";
+    public float dodgeDelay = 0.8f;
+    private float dodgeDelayTimer;
+
+    public float dodgeMissTimer;
+    private Vector3 position;
+
+    Animation swordSwipe;
 
     // Use this for initialization
     void Start () {
-        anim = avatar.GetComponent<Animator>();
-        flameStream.GetComponent<ParticleSystem>().Stop();
+        //flameStream.GetComponent<ParticleSystem>().Stop();
         rb = GetComponent<Rigidbody>();
+
+        swordSwipe = sword.GetComponent<Animation>();
+        swordPos = sword.GetComponent<Transform>().localPosition;
+        swordRot = sword.GetComponent<Transform>().localRotation;
     }
 	
 	// Update is called once per frame
 	void Update () {
 
         if (!GameManager.instance.playerDead) {
-            Movement();
-            Shooting();
-        } 
+            DodgeStart();
+            if (dodgeActive == true)
+            {
+                position = transform.position;
+                Dodge();
+                transform.position = position;
+                swordSwipe.Stop();
+                sword.transform.localPosition = swordPos;
+                sword.transform.localRotation = swordRot;
+            }
+            else { Shooting(); }   
+        }
+
+        if (Time.time > dodgeDelayTimer) { Movement(); }
     }
 
-    void Shooting() {
+    public void Shooting() {
         //Left Mouse Button
-        if (Input.GetMouseButton(0) && ammo >= 1) {
+        if (Input.GetMouseButton(0)) {
 
-            muzzleFlash.SetActive(true);
-
-            if (Time.time > MGFireTimer) {
-                Instantiate(bullet, muzzleFlash.transform.position, transform.rotation);
-                ammo -= 1;
+            if (Time.time > MGFireTimer && dodgeActive == false && Time.time > dodgeDelayTimer) {
+                swordSwipe.Play();
+                Instantiate(swordCol, swordColLocal.transform);
+                //swordColSpawned.transform.position = swordColLocal.transform.position;
                 MGFireTimer = Time.time + MGFireTime;
             }
 
-            anim.SetBool("Shooting", true);
         }
         else {
-            muzzleFlash.SetActive(false);
-            anim.SetBool("Shooting", false);
+            if (Time.time > MGFireTimer)
+            {
+                sword.transform.localPosition = swordPos;
+                sword.transform.localRotation = swordRot;
+            }
         }
 
         //Right Mouse Button
         if (Input.GetMouseButtonDown(1) && fuel >= 1) {
-            flameStream.GetComponent<ParticleSystem>().Play();
-            anim.SetBool("Flamer", true);
+            //flameStream.GetComponent<ParticleSystem>().Play();
         }
         else if (Input.GetMouseButtonUp(1) && fuel >= 1) {
-            flameStream.GetComponent<ParticleSystem>().Stop();
-            anim.SetBool("Flamer", false);
+            //flameStream.GetComponent<ParticleSystem>().Stop();
         }
         else if (fuel <= 0) {
-            flameStream.GetComponent<ParticleSystem>().Stop();
-            anim.SetBool("Flamer", false);
+            //flameStream.GetComponent<ParticleSystem>().Stop();
         }
 
         if (Input.GetMouseButton(1) && fuel >= 1) {
             if (Time.time > FTFireTimer) {
-                Instantiate(fireDamage, flameStream.transform.position, transform.rotation);
+                //Instantiate(fireDamage, flameStream.transform.position, transform.rotation);
                 fuel -= 1;
                 FTFireTimer = Time.time + FTFireTime;
             }
         }
     }
 
-    void Movement() {
+    public void Movement() {
 
         playerPosition = transform.position;
 
@@ -112,42 +140,6 @@ public class PlayerAvatar : MonoBehaviour {
         Vector3 moveVector = (playerPosition - transform.position).normalized;
         float direction = Vector3.Dot(moveVector, transform.forward);
 
-        //Relative Forwards
-        if (direction > 0.8f) {
-            anim.SetBool("Walking F", true);
-            anim.SetBool("Walking B", false);
-            anim.SetBool("Strafe R", false);
-            anim.SetBool("Strafe L", false);
-        }
-        //Relative Right
-        else if (direction < 0.8f && direction > 0) {
-            anim.SetBool("Walking F", false);
-            anim.SetBool("Walking B", false);
-            anim.SetBool("Strafe R", true);
-            anim.SetBool("Strafe L", false);
-        }
-        //Relative Backwards
-        else if (direction < -0.8f) {
-            anim.SetBool("Walking F", false);
-            anim.SetBool("Walking B", true);
-            anim.SetBool("Strafe R", false);
-            anim.SetBool("Strafe L", false);
-        }
-        //Relative Left
-        else if (direction > -0.8f && direction < 0) {
-            anim.SetBool("Walking F", false);
-            anim.SetBool("Walking B", false);
-            anim.SetBool("Strafe R", false);
-            anim.SetBool("Strafe L", true);
-        }
-        //Turn off all anims
-        else {
-            anim.SetBool("Walking F", false);
-            anim.SetBool("Walking B", false);
-            anim.SetBool("Strafe R", false);
-            anim.SetBool("Strafe L", false);
-        }
-
         transform.position = playerPosition;
         rb.velocity = new Vector3(0,0,0);   //Freeze velocity
     }
@@ -159,17 +151,116 @@ public class PlayerAvatar : MonoBehaviour {
 
         if (health <= 0) {
             //Disable irrelvant animation bools
-            anim.SetBool("Dead", true);
-            anim.SetBool("Shooting", false);
-            muzzleFlash.SetActive(false);
-            anim.SetBool("Flamer", false);
-            flameStream.GetComponent<ParticleSystem>().Stop();
-            anim.SetBool("Walking F", false);
-            anim.SetBool("Walking B", false);
-            anim.SetBool("Strafe R", false);
-            anim.SetBool("Strafe L", false);
+            //muzzleFlash.SetActive(false);
+            //flameStream.GetComponent<ParticleSystem>().Stop();
             GameManager.instance.playerDead = true;
             rb.constraints = RigidbodyConstraints.FreezeAll;
+        }
+    }
+
+    private void DodgeStart()
+    {
+        if (Input.GetKey("space") && Time.time > dodgeDelayTimer)
+        {
+            if (Input.GetKey("w") || Input.GetKey("a") || Input.GetKey("s") || Input.GetKey("d"))
+            {
+                if (Input.GetKey("w"))
+                {
+                    dodgeDir1 = "w";
+                    if (Input.GetKey("a")) { dodgeDir2 = "a"; }
+                    if (Input.GetKey("d")) { dodgeDir2 = "d"; }
+                }
+                if (Input.GetKey("a"))
+                {
+                    dodgeDir1 = "a";
+                    if (Input.GetKey("w")) { dodgeDir2 = "w"; }
+                    if (Input.GetKey("s")) { dodgeDir2 = "s"; }
+                }
+                if (Input.GetKey("s"))
+                {
+                    dodgeDir1 = "s";
+                    if (Input.GetKey("a")) { dodgeDir2 = "a"; }
+                    if (Input.GetKey("d")) { dodgeDir2 = "d"; }
+                }
+                if (Input.GetKey("d"))
+                {
+                    dodgeDir1 = "d";
+                    if (Input.GetKey("w")) { dodgeDir2 = "w"; }
+                    if (Input.GetKey("s")) { dodgeDir2 = "s"; }
+                }
+
+                dodgeActive = true;
+                dodgeUntil = Time.time + dodgeTime;
+                dodgeDelayTimer = Time.time + dodgeDelay + dodgeTime;
+                dodgeMissTimer = Time.time + dodgeDelay + dodgeTime - 0.01f;
+            }
+        }
+    }
+
+    private void Dodge()
+    {
+        if (dodgeDir1 == "w")
+        {
+            if (dodgeDir2 == "a")
+            {
+                position.z += diagDodgeSpeed * Time.deltaTime;
+                position.x -= diagDodgeSpeed * Time.deltaTime;
+            }
+            else if (dodgeDir2 == "d")
+            {
+                position.z += diagDodgeSpeed * Time.deltaTime;
+                position.x += diagDodgeSpeed * Time.deltaTime;
+            }
+            else { position.z += fullDodgeSpeed * Time.deltaTime; }
+        }
+        if (dodgeDir1 == "a")
+        {
+            if (dodgeDir2 == "w")
+            {
+                position.x -= diagDodgeSpeed * Time.deltaTime;
+                position.z += diagDodgeSpeed * Time.deltaTime;
+            }
+            else if (dodgeDir2 == "s")
+            {
+                position.x -= diagDodgeSpeed * Time.deltaTime;
+                position.z -= diagDodgeSpeed * Time.deltaTime;
+            }
+            else { position.x -= fullDodgeSpeed * Time.deltaTime; }
+        }
+        if (dodgeDir1 == "s")
+        {
+            if (dodgeDir2 == "a")
+            {
+                position.z -= diagDodgeSpeed * Time.deltaTime;
+                position.x -= diagDodgeSpeed * Time.deltaTime;
+            }
+            else if (dodgeDir2 == "d")
+            {
+                position.z -= diagDodgeSpeed * Time.deltaTime;
+                position.x += diagDodgeSpeed * Time.deltaTime;
+            }
+            else { position.z -= fullDodgeSpeed * Time.deltaTime; }
+        }
+        if (dodgeDir1 == "d")
+        {
+            if (dodgeDir2 == "w")
+            {
+                position.x += diagDodgeSpeed * Time.deltaTime;
+                position.z += diagDodgeSpeed * Time.deltaTime;
+            }
+            else if (dodgeDir2 == "s")
+            {
+                position.x += diagDodgeSpeed * Time.deltaTime;
+                position.z -= diagDodgeSpeed * Time.deltaTime;
+            }
+            else { position.x += fullDodgeSpeed * Time.deltaTime; }
+        }
+
+        if (Time.time > dodgeUntil)
+        {
+            dodgeActive = false;
+            dodgeDir1 = "";
+            dodgeDir2 = "";
         }
     }
 

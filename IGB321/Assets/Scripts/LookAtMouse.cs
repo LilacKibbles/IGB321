@@ -11,7 +11,7 @@ public class LookAtMouse : MonoBehaviour{
 	
 	void Start(){
 		gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-	}
+	} 
 
     void FixedUpdate () {
 
