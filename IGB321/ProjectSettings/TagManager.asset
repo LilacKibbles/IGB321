@@ -11,6 +11,8 @@ TagManager:
   - GameManager
   - Enemy
   - Sword
+  - Trail
+  - Door
   layers:
   - Default
   - TransparentFX
