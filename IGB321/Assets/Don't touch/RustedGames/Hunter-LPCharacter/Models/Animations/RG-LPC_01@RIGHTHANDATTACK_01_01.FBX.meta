@@ -1,0 +1,921 @@
+fileFormatVersion: 2
+guid: 88322570358fc40458f478c8b3fd02b9
+timeCreated: 1531307282
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: LowPolyBody-RIG_01Head
+    100002: LowPolyBody-RIG_01LCalf
+    100004: LowPolyBody-RIG_01LCollarbone
+    100006: LowPolyBody-RIG_01LFoot
+    100008: LowPolyBody-RIG_01LForearm
+    100010: LowPolyBody-RIG_01LIndex1
+    100012: LowPolyBody-RIG_01LIndex2
+    100014: LowPolyBody-RIG_01LIndex3
+    100016: LowPolyBody-RIG_01LLittle1
+    100018: LowPolyBody-RIG_01LLittle2
+    100020: LowPolyBody-RIG_01LLittle3
+    100022: LowPolyBody-RIG_01LMiddle1
+    100024: LowPolyBody-RIG_01LMiddle2
+    100026: LowPolyBody-RIG_01LMiddle3
+    100028: LowPolyBody-RIG_01LPalm
+    100030: LowPolyBody-RIG_01LRing1
+    100032: LowPolyBody-RIG_01LRing2
+    100034: LowPolyBody-RIG_01LRing3
+    100036: LowPolyBody-RIG_01LThigh
+    100038: LowPolyBody-RIG_01LThumb1
+    100040: LowPolyBody-RIG_01LThumb2
+    100042: LowPolyBody-RIG_01LThumb3
+    100044: LowPolyBody-RIG_01LToe1
+    100046: LowPolyBody-RIG_01LToe2
+    100048: LowPolyBody-RIG_01LUpperarm
+    100050: LowPolyBody-RIG_01Neck
+    100052: LowPolyBody-RIG_01Pelvis
+    100054: LowPolyBody-RIG_01RCalf
+    100056: LowPolyBody-RIG_01RCollarbone
+    100058: LowPolyBody-RIG_01RFoot
+    100060: LowPolyBody-RIG_01RForearm
+    100062: LowPolyBody-RIG_01Ribcage
+    100064: LowPolyBody-RIG_01RIndex1
+    100066: LowPolyBody-RIG_01RIndex2
+    100068: LowPolyBody-RIG_01RIndex3
+    100070: LowPolyBody-RIG_01RLittle1
+    100072: LowPolyBody-RIG_01RLittle2
+    100074: LowPolyBody-RIG_01RLittle3
+    100076: LowPolyBody-RIG_01RMiddle1
+    100078: LowPolyBody-RIG_01RMiddle2
+    100080: LowPolyBody-RIG_01RMiddle3
+    100082: LowPolyBody-RIG_01RPalm
+    100084: LowPolyBody-RIG_01RRing1
+    100086: LowPolyBody-RIG_01RRing2
+    100088: LowPolyBody-RIG_01RRing3
+    100090: LowPolyBody-RIG_01RThigh
+    100092: LowPolyBody-RIG_01RThumb1
+    100094: LowPolyBody-RIG_01RThumb2
+    100096: LowPolyBody-RIG_01RThumb3
+    100098: LowPolyBody-RIG_01RToe1
+    100100: LowPolyBody-RIG_01RToe2
+    100102: LowPolyBody-RIG_01RUpperarm
+    100104: LowPolyBody-RIG_01SpineChest
+    100106: LowPolyBody-RIG_01SpineSpine
+    100108: RG-LPC_01
+    100110: //RootNode
+    400000: LowPolyBody-RIG_01Head
+    400002: LowPolyBody-RIG_01LCalf
+    400004: LowPolyBody-RIG_01LCollarbone
+    400006: LowPolyBody-RIG_01LFoot
+    400008: LowPolyBody-RIG_01LForearm
+    400010: LowPolyBody-RIG_01LIndex1
+    400012: LowPolyBody-RIG_01LIndex2
+    400014: LowPolyBody-RIG_01LIndex3
+    400016: LowPolyBody-RIG_01LLittle1
+    400018: LowPolyBody-RIG_01LLittle2
+    400020: LowPolyBody-RIG_01LLittle3
+    400022: LowPolyBody-RIG_01LMiddle1
+    400024: LowPolyBody-RIG_01LMiddle2
+    400026: LowPolyBody-RIG_01LMiddle3
+    400028: LowPolyBody-RIG_01LPalm
+    400030: LowPolyBody-RIG_01LRing1
+    400032: LowPolyBody-RIG_01LRing2
+    400034: LowPolyBody-RIG_01LRing3
+    400036: LowPolyBody-RIG_01LThigh
+    400038: LowPolyBody-RIG_01LThumb1
+    400040: LowPolyBody-RIG_01LThumb2
+    400042: LowPolyBody-RIG_01LThumb3
+    400044: LowPolyBody-RIG_01LToe1
+    400046: LowPolyBody-RIG_01LToe2
+    400048: LowPolyBody-RIG_01LUpperarm
+    400050: LowPolyBody-RIG_01Neck
+    400052: LowPolyBody-RIG_01Pelvis
+    400054: LowPolyBody-RIG_01RCalf
+    400056: LowPolyBody-RIG_01RCollarbone
+    400058: LowPolyBody-RIG_01RFoot
+    400060: LowPolyBody-RIG_01RForearm
+    400062: LowPolyBody-RIG_01Ribcage
+    400064: LowPolyBody-RIG_01RIndex1
+    400066: LowPolyBody-RIG_01RIndex2
+    400068: LowPolyBody-RIG_01RIndex3
+    400070: LowPolyBody-RIG_01RLittle1
+    400072: LowPolyBody-RIG_01RLittle2
+    400074: LowPolyBody-RIG_01RLittle3
+    400076: LowPolyBody-RIG_01RMiddle1
+    400078: LowPolyBody-RIG_01RMiddle2
+    400080: LowPolyBody-RIG_01RMiddle3
+    400082: LowPolyBody-RIG_01RPalm
+    400084: LowPolyBody-RIG_01RRing1
+    400086: LowPolyBody-RIG_01RRing2
+    400088: LowPolyBody-RIG_01RRing3
+    400090: LowPolyBody-RIG_01RThigh
+    400092: LowPolyBody-RIG_01RThumb1
+    400094: LowPolyBody-RIG_01RThumb2
+    400096: LowPolyBody-RIG_01RThumb3
+    400098: LowPolyBody-RIG_01RToe1
+    400100: LowPolyBody-RIG_01RToe2
+    400102: LowPolyBody-RIG_01RUpperarm
+    400104: LowPolyBody-RIG_01SpineChest
+    400106: LowPolyBody-RIG_01SpineSpine
+    400108: RG-LPC_01
+    400110: //RootNode
+    2100000: RG-LPC-Clothes_01
+    2100002: RG-LPC-Skin_01
+    4300000: RG-LPC_01
+    7400000: RIGHTHANDATTACK_01_01
+    9500000: //RootNode
+    13700000: RG-LPC_01
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Take 001':\n\tRetargeting
+      quality is good. No significant differences with original animation were found.\n"
+    animationDoRetargetingWarnings: 1
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: RIGHTHANDATTACK_01_01
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: LowPolyBody-RIG_01Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LThigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RThigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LCalf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RCalf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01SpineSpine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LToe1
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RToe1
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RCollarbone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RUpperarm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RForearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RPalm
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LCollarbone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LUpperarm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LForearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LPalm
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LLittle1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LLittle2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01LLittle3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RLittle1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RLittle2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01RLittle3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01SpineChest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowPolyBody-RIG_01Ribcage
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: RG-LPC_01(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01Pelvis
+      parentName: RG-LPC_01(Clone)
+      position: {x: 0.0000000131010545, y: 0.90028006, z: -0.07070946}
+      rotation: {x: 0.49912697, y: -0.5008714, z: -0.49912712, w: 0.5008716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01LThigh
+      parentName: LowPolyBody-RIG_01Pelvis
+      position: {x: -0.016671829, y: 0.045457456, z: 0.08517645}
+      rotation: {x: 0.01742345, y: 0.9997984, z: -0.0059763826, w: 0.007987919}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: LowPolyBody-RIG_01LCalf
+      parentName: LowPolyBody-RIG_01LThigh
+      position: {x: -0.3942228, y: 0.000000085830685, z: -0.00000023841858}
+      rotation: {x: 0.00086560857, y: 0.0007730735, z: 0.05801527, w: 0.99831504}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: LowPolyBody-RIG_01LFoot
+      parentName: LowPolyBody-RIG_01LCalf
+      position: {x: -0.46665934, y: 0, z: 0.000000009536743}
+      rotation: {x: -0.009192429, y: 0.0024505965, z: -0.6794365, w: 0.7336727}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: LowPolyBody-RIG_01LToe1
+      parentName: LowPolyBody-RIG_01LFoot
+      position: {x: -0.05802008, y: -0.028583262, z: 0.000005712509}
+      rotation: {x: 0.00007737438, y: -0.0006868987, z: -0.11187369, w: 0.9937222}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: LowPolyBody-RIG_01LToe2
+      parentName: LowPolyBody-RIG_01LToe1
+      position: {x: -0.067832224, y: 0, z: 0}
+      rotation: {x: 0, y: -3.8213714e-15, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01RThigh
+      parentName: LowPolyBody-RIG_01Pelvis
+      position: {x: -0.016671753, y: 0.04545745, z: -0.085176475}
+      rotation: {x: 0.017418832, y: 0.99979854, z: 0.005976423, w: -0.007987861}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: LowPolyBody-RIG_01RCalf
+      parentName: LowPolyBody-RIG_01RThigh
+      position: {x: -0.39422268, y: 0.000000085830685, z: 0.00000023841858}
+      rotation: {x: -0.0008578525, y: -0.00090515346, z: 0.057914577, w: 0.9983208}
+      scale: {x: 0.99999976, y: 0.99999994, z: 0.9999998}
+    - name: LowPolyBody-RIG_01RFoot
+      parentName: LowPolyBody-RIG_01RCalf
+      position: {x: -0.4666595, y: -0.000000009536743, z: -0.000000009536743}
+      rotation: {x: 0.009922813, y: -0.0014675343, z: -0.6793056, w: 0.73378694}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: LowPolyBody-RIG_01RToe1
+      parentName: LowPolyBody-RIG_01RFoot
+      position: {x: -0.058020074, y: -0.028583242, z: -0.000005712509}
+      rotation: {x: 0.000057703794, y: -0.00051258283, z: -0.111930884, w: 0.9937159}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01RToe2
+      parentName: LowPolyBody-RIG_01RToe1
+      position: {x: -0.06783222, y: -0.0000000023841857, z: 0}
+      rotation: {x: 0, y: -3.8213714e-15, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01SpineSpine
+      parentName: LowPolyBody-RIG_01Pelvis
+      position: {x: -0.04425667, y: -0.0033861017, z: -0.000000008403749}
+      rotation: {x: 0.000000020093607, y: -0.000000084165485, z: -0.028882412, w: 0.9995828}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: LowPolyBody-RIG_01SpineChest
+      parentName: LowPolyBody-RIG_01SpineSpine
+      position: {x: -0.2658555, y: 0, z: 9.094947e-15}
+      rotation: {x: -0.000000010663041, y: 0.00000003316793, z: 0.13405457, w: 0.99097395}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: LowPolyBody-RIG_01Ribcage
+      parentName: LowPolyBody-RIG_01SpineChest
+      position: {x: -0.22647315, y: -0.000000019073486, z: 0}
+      rotation: {x: 0.0000005752037, y: 0.0000006512105, z: -0.0822261, w: 0.99661374}
+      scale: {x: 0.9999996, y: 0.9999996, z: 1}
+    - name: LowPolyBody-RIG_01LCollarbone
+      parentName: LowPolyBody-RIG_01Ribcage
+      position: {x: 0.027229004, y: 0.099049605, z: 0.027598178}
+      rotation: {x: 0.06164665, y: 0.7188674, z: 0.15993972, w: 0.67368287}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01LUpperarm
+      parentName: LowPolyBody-RIG_01LCollarbone
+      position: {x: -0.14983512, y: 0.000000057220458, z: 0}
+      rotation: {x: 0.069032125, y: -0.039337534, z: -0.19291127, w: 0.9779941}
+      scale: {x: 1.0000002, y: 0.9999999, z: 0.99999994}
+    - name: LowPolyBody-RIG_01LForearm
+      parentName: LowPolyBody-RIG_01LUpperarm
+      position: {x: -0.3165642, y: -0.000000047683713, z: 0}
+      rotation: {x: -0.00000035432743, y: 0.00000032136364, z: 0.00000031290995, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01LPalm
+      parentName: LowPolyBody-RIG_01LForearm
+      position: {x: -0.1855165, y: -0.00000022888183, z: 0.00000030517577}
+      rotation: {x: -0.7071074, y: 0.00000070050015, z: 0.0000009992416, w: 0.7071062}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01LIndex1
+      parentName: LowPolyBody-RIG_01LPalm
+      position: {x: -0.11918617, y: 0.0124429315, z: 0.032334633}
+      rotation: {x: 0.0042989184, y: 0.010332554, z: -0.11905651, w: 0.99282444}
+      scale: {x: 0.9999993, y: 1.0000007, z: 1}
+    - name: LowPolyBody-RIG_01LIndex2
+      parentName: LowPolyBody-RIG_01LIndex1
+      position: {x: -0.042138364, y: -0.00000022888183, z: -0.000000028610229}
+      rotation: {x: -0.0007454095, y: -0.02599365, z: 0.031959318, w: 0.9991508}
+      scale: {x: 0.9999996, y: 1.0000005, z: 1}
+    - name: LowPolyBody-RIG_01LIndex3
+      parentName: LowPolyBody-RIG_01LIndex2
+      position: {x: -0.022527695, y: -0.00000015258789, z: -0.000000019073486}
+      rotation: {x: -0.0020242627, y: -0.00044708385, z: 0.12609595, w: 0.9920159}
+      scale: {x: 1.0000002, y: 0.99999964, z: 1.0000001}
+    - name: LowPolyBody-RIG_01LLittle1
+      parentName: LowPolyBody-RIG_01LPalm
+      position: {x: -0.11885719, y: 0.008101043, z: -0.027204694}
+      rotation: {x: 0.0013523201, y: -0.0014480785, z: -0.105130956, w: 0.9944564}
+      scale: {x: 0.9999994, y: 1.0000006, z: 0.99999994}
+    - name: LowPolyBody-RIG_01LLittle2
+      parentName: LowPolyBody-RIG_01LLittle1
+      position: {x: -0.034487687, y: -0.00000015258789, z: -0.000000028610229}
+      rotation: {x: -0.0000044459002, y: -0.000023063616, z: 0.03993524, w: 0.99920225}
+      scale: {x: 0.99999994, y: 1.0000002, z: 0.99999994}
+    - name: LowPolyBody-RIG_01LLittle3
+      parentName: LowPolyBody-RIG_01LLittle2
+      position: {x: -0.018246382, y: 0, z: -0.000000019073486}
+      rotation: {x: 0.000012804943, y: 0.00003593745, z: 0.116824016, w: 0.9931526}
+      scale: {x: 1.0000007, y: 0.9999995, z: 1}
+    - name: LowPolyBody-RIG_01LMiddle1
+      parentName: LowPolyBody-RIG_01LPalm
+      position: {x: -0.118892744, y: 0.020207213, z: 0.011953172}
+      rotation: {x: -0.003873658, y: -0.0054158634, z: -0.028619982, w: 0.9995682}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: LowPolyBody-RIG_01LMiddle2
+      parentName: LowPolyBody-RIG_01LMiddle1
+      position: {x: -0.043830946, y: -0.00000015258789, z: -0.000000047683713}
+      rotation: {x: -0.00044701967, y: -0.0063233734, z: -0.020396244, w: 0.9997719}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999999}
+    - name: LowPolyBody-RIG_01LMiddle3
+      parentName: LowPolyBody-RIG_01LMiddle2
+      position: {x: -0.03368553, y: 0, z: -0.0000000333786}
+      rotation: {x: 0.0007088616, y: 0.014120682, z: 0.050083946, w: 0.99864495}
+      scale: {x: 1, y: 0.9999998, z: 0.9999999}
+    - name: LowPolyBody-RIG_01LRing1
+      parentName: LowPolyBody-RIG_01LPalm
+      position: {x: -0.11945976, y: 0.015214844, z: -0.008297558}
+      rotation: {x: 0.00048810567, y: -0.0044510583, z: -0.08635905, w: 0.996254}
+      scale: {x: 0.9999995, y: 1.0000005, z: 0.99999994}
+    - name: LowPolyBody-RIG_01LRing2
+      parentName: LowPolyBody-RIG_01LRing1
+      position: {x: -0.037853774, y: -0.00000015258789, z: -0.000000038146972}
+      rotation: {x: 0.00000078222337, y: -0.000000118743586, z: 0.04081124, w: 0.99916685}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: LowPolyBody-RIG_01LRing3
+      parentName: LowPolyBody-RIG_01LRing2
+      position: {x: -0.02814186, y: -0.00000015258789, z: -0.000000038146972}
+      rotation: {x: 0.00000060749903, y: -0.0000010525574, z: 0.08715648, w: 0.99619466}
+      scale: {x: 1.0000004, y: 0.99999946, z: 0.99999994}
+    - name: LowPolyBody-RIG_01LThumb1
+      parentName: LowPolyBody-RIG_01LPalm
+      position: {x: -0.067430116, y: -0.008533478, z: 0.032671504}
+      rotation: {x: -0.1532124, y: 0.39553502, z: 0.08031378, w: 0.9020132}
+      scale: {x: 0.999999, y: 0.9999987, z: 1.0000024}
+    - name: LowPolyBody-RIG_01LThumb2
+      parentName: LowPolyBody-RIG_01LThumb1
+      position: {x: -0.03845909, y: 0.00000015258789, z: 0}
+      rotation: {x: 0.014556133, y: -0.034372196, z: -0.018363977, w: 0.99913436}
+      scale: {x: 0.9999995, y: 0.99999887, z: 1.0000017}
+    - name: LowPolyBody-RIG_01LThumb3
+      parentName: LowPolyBody-RIG_01LThumb2
+      position: {x: -0.032071684, y: 0, z: -0.000000076293944}
+      rotation: {x: 0.008897278, y: 0.062156755, z: -0.03971654, w: 0.9972362}
+      scale: {x: 0.99999887, y: 0.999999, z: 1.0000021}
+    - name: LowPolyBody-RIG_01Neck
+      parentName: LowPolyBody-RIG_01Ribcage
+      position: {x: -0.00076904293, y: -0.0033861063, z: -0.0000000065028596}
+      rotation: {x: 0.00000014459968, y: 0.00000013204934, z: -0.20016295, w: 0.9797626}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01Head
+      parentName: LowPolyBody-RIG_01Neck
+      position: {x: -0.12767501, y: -0.000000038146972, z: 0}
+      rotation: {x: 2.0167658e-14, y: -0.00000004431927, z: 0.13601492, w: 0.9907068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01RCollarbone
+      parentName: LowPolyBody-RIG_01Ribcage
+      position: {x: 0.027229004, y: 0.0990496, z: -0.027598163}
+      rotation: {x: -0.0616459, y: -0.7188673, z: 0.15994005, w: 0.6736829}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowPolyBody-RIG_01RUpperarm
+      parentName: LowPolyBody-RIG_01RCollarbone
+      position: {x: -0.14983508, y: -0.000000095367426, z: -0.00000015258789}
+      rotation: {x: 0.038656283, y: 0.01794007, z: -0.19606134, w: 0.97966516}
+      scale: {x: 0.9999997, y: 1.0000004, z: 1}
+    - name: LowPolyBody-RIG_01RForearm
+      parentName: LowPolyBody-RIG_01RUpperarm
+      position: {x: -0.31656423, y: -0.000000038146972, z: 0.00000015258789}
+      rotation: {x: -0.10968629, y: 0.0000003886508, z: -0.00000029734375, w: 0.9939663}
+      scale: {x: 1, y: 1.0000002, z: 0.99999976}
+    - name: LowPolyBody-RIG_01RPalm
+      parentName: LowPolyBody-RIG_01RForearm
+      position: {x: -0.18551646, y: 0.00000017166137, z: 0.00000030517577}
+      rotation: {x: 0.7071059, y: -0.00000019909479, z: -0.0000010999707, w: 0.7071078}
+      scale: {x: 1, y: 0.99999976, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RIndex1
+      parentName: LowPolyBody-RIG_01RPalm
+      position: {x: -0.119186245, y: 0.012443084, z: -0.032334838}
+      rotation: {x: -0.0042963945, y: -0.010333322, z: -0.11905778, w: 0.99282426}
+      scale: {x: 1.0000008, y: 0.9999989, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RIndex2
+      parentName: LowPolyBody-RIG_01RIndex1
+      position: {x: -0.04213829, y: 0.00000015258789, z: -0.000000009536743}
+      rotation: {x: 0.0007481359, y: 0.025999647, z: 0.03196719, w: 0.9991505}
+      scale: {x: 1.0000006, y: 0.99999905, z: 1.0000004}
+    - name: LowPolyBody-RIG_01RIndex3
+      parentName: LowPolyBody-RIG_01RIndex2
+      position: {x: -0.022527771, y: 0.00000022888183, z: -0.000000014305114}
+      rotation: {x: 0.0020266676, y: 0.000446076, z: 0.1260943, w: 0.99201614}
+      scale: {x: 0.99999964, y: 0.99999994, z: 1.0000004}
+    - name: LowPolyBody-RIG_01RLittle1
+      parentName: LowPolyBody-RIG_01RPalm
+      position: {x: -0.118857116, y: 0.0081015015, z: 0.027204474}
+      rotation: {x: -0.0013497908, y: 0.0014472546, z: -0.10513238, w: 0.9944563}
+      scale: {x: 1.0000006, y: 0.99999917, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RLittle2
+      parentName: LowPolyBody-RIG_01RLittle1
+      position: {x: -0.034487687, y: 0.00000022888183, z: -0.000000009536743}
+      rotation: {x: 0.0000070810756, y: 0.000022686545, z: 0.039929446, w: 0.99920255}
+      scale: {x: 1.0000002, y: 0.9999997, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RLittle3
+      parentName: LowPolyBody-RIG_01RLittle2
+      position: {x: -0.018246306, y: 0, z: -0.000000019073486}
+      rotation: {x: -0.000010443597, y: -0.000037149443, z: 0.11682253, w: 0.9931528}
+      scale: {x: 0.9999996, y: 1.0000005, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RMiddle1
+      parentName: LowPolyBody-RIG_01RPalm
+      position: {x: -0.118892975, y: 0.020207519, z: -0.011953334}
+      rotation: {x: 0.003876129, y: 0.0054148408, z: -0.028621579, w: 0.99956816}
+      scale: {x: 1.0000001, y: 0.99999964, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RMiddle2
+      parentName: LowPolyBody-RIG_01RMiddle1
+      position: {x: -0.043831024, y: 0.00000015258789, z: -0.000000038146972}
+      rotation: {x: 0.00044952292, y: 0.0063224654, z: -0.020397844, w: 0.9997719}
+      scale: {x: 1.0000004, y: 0.99999946, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RMiddle3
+      parentName: LowPolyBody-RIG_01RMiddle2
+      position: {x: -0.03368553, y: 0.00000015258789, z: -0.000000023841856}
+      rotation: {x: -0.00070643815, y: -0.014121665, z: 0.050082427, w: 0.998645}
+      scale: {x: 1.0000001, y: 0.99999976, z: 1.0000001}
+    - name: LowPolyBody-RIG_01RRing1
+      parentName: LowPolyBody-RIG_01RPalm
+      position: {x: -0.11945968, y: 0.015215301, z: 0.008297367}
+      rotation: {x: -0.00048558664, y: 0.0044501834, z: -0.08636055, w: 0.9962539}
+      scale: {x: 1.0000006, y: 0.9999992, z: 1.0000002}
+    - name: LowPolyBody-RIG_01RRing2
+      parentName: LowPolyBody-RIG_01RRing1
+      position: {x: -0.037853926, y: 0, z: -0.000000019073486}
+      rotation: {x: 0.0000019544377, y: -0.00000072084333, z: 0.04081588, w: 0.99916667}
+      scale: {x: 1.0000002, y: 0.99999964, z: 1.0000001}
+    - name: LowPolyBody-RIG_01RRing3
+      parentName: LowPolyBody-RIG_01RRing2
+      position: {x: -0.02814186, y: 0.00000015258789, z: -0.000000019073486}
+      rotation: {x: 0.000001777752, y: -0.00000009756255, z: 0.08715492, w: 0.9961948}
+      scale: {x: 0.99999964, y: 1.0000001, z: 1.0000001}
+    - name: LowPolyBody-RIG_01RThumb1
+      parentName: LowPolyBody-RIG_01RPalm
+      position: {x: -0.067430034, y: -0.008533478, z: -0.032671697}
+      rotation: {x: 0.15321705, y: -0.39553362, z: 0.080312096, w: 0.9020131}
+      scale: {x: 1.000001, y: 1.0000012, z: 0.99999774}
+    - name: LowPolyBody-RIG_01RThumb2
+      parentName: LowPolyBody-RIG_01RThumb1
+      position: {x: -0.03845913, y: 0, z: -0.000000114440915}
+      rotation: {x: -0.01455408, y: 0.03436991, z: -0.018361777, w: 0.99913454}
+      scale: {x: 1.0000002, y: 1.0000011, z: 0.9999986}
+    - name: LowPolyBody-RIG_01RThumb3
+      parentName: LowPolyBody-RIG_01RThumb2
+      position: {x: -0.032071684, y: 0, z: -0.000000076293944}
+      rotation: {x: -0.008895118, y: -0.062158756, z: -0.039716475, w: 0.9972361}
+      scale: {x: 1.0000007, y: 1.000001, z: 0.9999981}
+    - name: RG-LPC_01
+      parentName: RG-LPC_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6644cf2f5a1520f418e2475576be43c6,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
