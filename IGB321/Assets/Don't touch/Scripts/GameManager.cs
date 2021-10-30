@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 
     public bool levelComplete = false;
 
-    string thisLevel;
+    public string thisLevel;
     public string nextLevel;
 
     public Slider blood;

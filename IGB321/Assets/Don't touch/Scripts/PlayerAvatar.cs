@@ -215,6 +215,7 @@ public class PlayerAvatar : MonoBehaviour {
             rb.constraints = RigidbodyConstraints.FreezeAll;
             GameManager.instance.health.value = 0;
             Destroy(this.gameObject);
+            StartCoroutine(GameManager.instance.LoadLevel(GameManager.instance.thisLevel));
         }
     }
 
@@ -329,6 +330,8 @@ public class PlayerAvatar : MonoBehaviour {
 
         if (other.tag == "Goal") {
             GameManager.instance.levelComplete = true;
+            Debug.Log("yes");
+            Destroy(other.gameObject);
             StartCoroutine(GameManager.instance.LoadLevel(GameManager.instance.nextLevel));
         }
     }
