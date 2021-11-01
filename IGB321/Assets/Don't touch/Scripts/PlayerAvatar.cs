@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAvatar : MonoBehaviour {
 
@@ -214,8 +215,7 @@ public class PlayerAvatar : MonoBehaviour {
             GameManager.instance.playerDead = true;
             rb.constraints = RigidbodyConstraints.FreezeAll;
             GameManager.instance.health.value = 0;
-            Destroy(this.gameObject);
-            StartCoroutine(GameManager.instance.LoadLevel(GameManager.instance.thisLevel));
+            SceneManager.LoadScene(GameManager.instance.thisLevel);
         }
     }
 
