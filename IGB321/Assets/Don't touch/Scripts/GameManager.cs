@@ -48,7 +48,11 @@ public class GameManager : MonoBehaviour {
 
         yield return new WaitForSeconds(3);
 
-        SceneManager.LoadScene(level);
+        if (level == "End") { Application.Quit(); }
+        else
+        {
+            SceneManager.LoadScene(level);
+        }
     }
 
 
